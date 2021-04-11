@@ -14,8 +14,6 @@ import requests
 import pathlib
 import json
 
-location = ""
-
 class Window(QWidget):
     def __init__(self):
         super().__init__()
