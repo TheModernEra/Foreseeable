@@ -6,6 +6,7 @@ from PyQt5.QtWidgets import (
     QWidget,
 )
 
+from PyQt5.QtWinExtras import QtWin
 from PyQt5.QtWidgets import *
 from PyQt5.QtCore import *
 from PyQt5.QtGui import *
@@ -20,6 +21,7 @@ class Window(QWidget):
         super().__init__()
         self.setWindowTitle("Foreseeable")
         self.setWindowIcon(QIcon("icon.png"))
+        QtWin.setCurrentProcessExplicitAppUserModelID("ModernEra.Foreseeable.1.0")
         self.setFixedWidth(700)
         self.setFixedHeight(100)
         # Create a QHBoxLayout instance
